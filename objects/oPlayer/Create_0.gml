@@ -24,4 +24,11 @@ global.coins = 0;
 isInvincible = false;
 
 //health points
-hp = 6;
+hp = 5;
+
+
+//level timer
+levelTimer = 20;
+
+//invincibility timer
+invTimer = 2;

@@ -5,7 +5,7 @@
 isInvincible = false;
 
 //health points
-hp = 3;
+hp = 2;
 
 //set timer
 invTimer = 0.5;

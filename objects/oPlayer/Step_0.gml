@@ -1,5 +1,21 @@
 //code that runs every frame
 
+if isInvincible
+{
+	invTimer -= 1/room_speed;
+	if invTimer <= 0
+	{
+		invTimer = 2;
+		isInvincible = false;
+	}
+}
+
+levelTimer -= 1/room_speed;
+
+if (levelTimer < 0)
+{
+	room_restart();	
+}
 //keyboard check and inputs
 right = keyboard_check(vk_right);
 left = keyboard_check(vk_left);
@@ -54,5 +70,5 @@ if (place_meeting(x, y + 1, oWall) and (jump))
 if(y>=room_height)
 
 	{
-		room_restart();	
+		PlayerDeath();	
 	}
