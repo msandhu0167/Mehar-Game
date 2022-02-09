@@ -10,9 +10,8 @@ hp = 2;
 //set timer
 invTimer = 0.5;
 
-//enemy patrol
+//patrol timer
 turnTimer = 2.5;
-
-xDirection = 0;
+xDirection = 1;
 xSpeed = 2;
 

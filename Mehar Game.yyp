@@ -7,7 +7,7 @@
     {"id":{"name":"level2","path":"rooms/level2/level2.yy",},"order":1,},
     {"id":{"name":"EnemyHurt","path":"scripts/EnemyHurt/EnemyHurt.yy",},"order":0,},
     {"id":{"name":"oTurret","path":"objects/oTurret/oTurret.yy",},"order":9,},
-    {"id":{"name":"oEnemyPatrol","path":"objects/oEnemyPatrol/oEnemyPatrol.yy",},"order":6,},
+    {"id":{"name":"oEnemyPartol","path":"objects/oEnemyPartol/oEnemyPartol.yy",},"order":6,},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},"order":1,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
     {"id":{"name":"sProjectile","path":"sprites/sProjectile/sProjectile.yy",},"order":5,},

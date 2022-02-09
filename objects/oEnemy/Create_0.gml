@@ -8,5 +8,5 @@ isInvincible = false;
 hp = 2;
 
 //set timer
-invTimer = 0.5;
+invTimer = 2;
 

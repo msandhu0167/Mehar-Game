@@ -6,7 +6,7 @@ function EnemyHurt()
 {
 	if(!other.isInvincible)
 	{
-		isInvincible = true;
+		other.isInvincible = true;
 		other.hp --;
 		if (other.hp < 1)
 		{

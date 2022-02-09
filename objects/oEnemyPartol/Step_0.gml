@@ -6,13 +6,13 @@ if (isInvincible)
 	invTimer -= 1/room_speed;
 	if (invTimer < 0)
 	{
-		invTimer = 0.5;
+		invTimer = 2.5;
 		isInvincible = false;
 	}
 }
 
-invTimer -= 1/room_speed;
-if (invTimer < 0)
+turnTimer -= 1/room_speed;
+if (turnTimer < 0)
 	{
 		turnTimer = 2.5;
 		xDirection = -xDirection
@@ -25,4 +25,12 @@ if(place_meeting(x + xVector, y, oWall))
 	turnTimer = 2.5;
 }
 
+if(place_meeting(x + xVector, y, oPlayer))
+{
+	xDirection = -xDirection;
+	turnTimer = 2.5;
+}
+
 x = x + xVector;
+
+
