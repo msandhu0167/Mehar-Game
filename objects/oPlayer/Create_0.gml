@@ -13,7 +13,7 @@ yVector = 0;
 //gravity levels
 grv = 0.1;
 
-jumpForce = -6;
+jumpForce = -5;
 
 //coins and points
 

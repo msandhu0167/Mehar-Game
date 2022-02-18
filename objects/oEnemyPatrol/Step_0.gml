@@ -6,14 +6,14 @@ if (isInvincible)
 	invTimer -= 1/room_speed;
 	if (invTimer < 0)
 	{
-		invTimer = 2.5;
+		invTimer = 2;
 		isInvincible = false;
 	}
 }
 
 turnTimer -= 1/room_speed;
 if (turnTimer < 0)
-	{
+{
 		turnTimer = 2.5;
 		xDirection = -xDirection
 }

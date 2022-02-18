@@ -20,7 +20,7 @@ if (levelTimer < 0)
 //keyboard check and inputs
 right = keyboard_check(vk_right);
 left = keyboard_check(vk_left);
-jump = keyboard_check_pressed(vk_space);
+jump = keyboard_check_pressed(vk_up);
 
 //horizontal movement
 xDirection = right - left;
@@ -88,7 +88,7 @@ if (place_meeting(x, y + yVector, oWall))
 //otherwise move normal
 y = y + yVector;
 
-//if we are touching oWall and we ress the jump key, fly like an eagle 
+//if we are touching oWall and we press the jump key, fly like an eagle 
 if (place_meeting(x, y + 1, oWall) and (jump))
 {
 		yVector = jumpForce;

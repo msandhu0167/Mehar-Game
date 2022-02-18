@@ -1,13 +1,14 @@
 {
   "resources": [
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},"order":2,},
+    {"id":{"name":"sFlower","path":"sprites/sFlower/sFlower.yy",},"order":7,},
     {"id":{"name":"oFlag","path":"objects/oFlag/oFlag.yy",},"order":7,},
     {"id":{"name":"sTurret","path":"sprites/sTurret/sTurret.yy",},"order":6,},
     {"id":{"name":"PlayerHurt","path":"scripts/PlayerHurt/PlayerHurt.yy",},"order":1,},
     {"id":{"name":"level2","path":"rooms/level2/level2.yy",},"order":1,},
     {"id":{"name":"EnemyHurt","path":"scripts/EnemyHurt/EnemyHurt.yy",},"order":0,},
     {"id":{"name":"oTurret","path":"objects/oTurret/oTurret.yy",},"order":9,},
-    {"id":{"name":"oEnemyPartol","path":"objects/oEnemyPartol/oEnemyPartol.yy",},"order":6,},
+    {"id":{"name":"oEnemyPatrol","path":"objects/oEnemyPatrol/oEnemyPatrol.yy",},"order":6,},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},"order":1,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
     {"id":{"name":"sProjectile","path":"sprites/sProjectile/sProjectile.yy",},"order":5,},
@@ -17,7 +18,9 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"order":2,},
     {"id":{"name":"oProjectile","path":"objects/oProjectile/oProjectile.yy",},"order":8,},
+    {"id":{"name":"level3","path":"rooms/level3/level3.yy",},"order":2,},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},"order":3,},
+    {"id":{"name":"oFlower","path":"objects/oFlower/oFlower.yy",},"order":10,},
     {"id":{"name":"sFlag","path":"sprites/sFlag/sFlag.yy",},"order":4,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"level1","path":"rooms/level1/level1.yy",},"order":0,},
@@ -38,6 +41,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"roomId":{"name":"level2","path":"rooms/level2/level2.yy",},},
+    {"roomId":{"name":"level3","path":"rooms/level3/level3.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

@@ -1,4 +1,5 @@
 //trigger temporary invincibility and get damaged
+
 function PlayerHurt()
 {
 	if(!oPlayer.isInvincible)

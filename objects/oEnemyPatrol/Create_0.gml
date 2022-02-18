@@ -8,7 +8,7 @@ isInvincible = false;
 hp = 2;
 
 //set timer
-invTimer = 2.5;
+invTimer = 0.5;
 
 //patrol timer
 turnTimer = 2.5;
