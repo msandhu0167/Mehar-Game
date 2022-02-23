@@ -1,27 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (isInvincible)
-{
-	invTimer -= 1/room_speed;
-	if (invTimer < 0)
-	{
-		invTimer = 2;
-		isInvincible = false;
-	}
-}
-
-xDirection = sign(oPlayer.x - x);
-xVector = xSpeed * xDirection;
-
-
-if (abs(oPlayer.x - x) < 128 )
-{
-	
-x = x + xVector;
-
-}
-
 yVector = yVector + grv;
 
 if (place_meeting(x, y + yVector, oWall))

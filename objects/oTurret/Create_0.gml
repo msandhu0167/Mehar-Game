@@ -6,3 +6,7 @@ hp = 2;
 
 //timer
 shotTimer = 3;
+
+//gravity
+grv = 0.4;
+yVector = 0;

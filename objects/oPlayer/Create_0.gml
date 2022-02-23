@@ -11,9 +11,9 @@ xVector = xSpeed * xDirection;
 yVector = 0;
 
 //gravity levels
-grv = 0.1;
+grv = 0.4;
 
-jumpForce = -5;
+jumpForce = -10;
 
 //coins and points
 
