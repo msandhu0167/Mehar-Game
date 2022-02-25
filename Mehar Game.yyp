@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},"order":2,},
     {"id":{"name":"sFlower","path":"sprites/sFlower/sFlower.yy",},"order":7,},
+    {"id":{"name":"sHook","path":"sprites/sHook/sHook.yy",},"order":8,},
     {"id":{"name":"oFlag","path":"objects/oFlag/oFlag.yy",},"order":7,},
     {"id":{"name":"sTurret","path":"sprites/sTurret/sTurret.yy",},"order":6,},
     {"id":{"name":"PlayerHurt","path":"scripts/PlayerHurt/PlayerHurt.yy",},"order":1,},

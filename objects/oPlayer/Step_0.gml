@@ -1,5 +1,28 @@
 //code that runs every frame
 
+if (mouse_check_button_pressed(mb_left))
+{
+	mouseX = mouse_x;	
+	mouseY = mouse_y;
+	if (place_meeting(mouseX, mouseY, oWall))
+	{
+		hookActive = true;	
+	}
+}
+
+if hookActive
+{
+	grv = 0.1
+	x += (mouseX - x) * 0.1;
+	y += (mouseY - y) * 0.1;
+}
+
+if (mouse_check_button_released(mb_left))
+	{
+		hookActive = false;	
+		grv = 0.4
+	}
+
 
 if isInvincible
 {
@@ -10,6 +33,7 @@ if isInvincible
 		isInvincible = false;
 	}
 }
+
 
 levelTimer -= 1/room_speed;
 

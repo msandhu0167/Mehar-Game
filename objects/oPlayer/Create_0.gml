@@ -28,7 +28,11 @@ hp = 5;
 
 
 //level timer
-levelTimer = 20;
+levelTimer = 40;
 
 //invincibility timer
 invTimer = 2;
+
+mouseX = mouse_x;
+mouseY = mouse_y;
+hookActive = false;
