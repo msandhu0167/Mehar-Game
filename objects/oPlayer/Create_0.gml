@@ -36,3 +36,7 @@ invTimer = 2;
 mouseX = mouse_x;
 mouseY = mouse_y;
 hookActive = false;
+
+hookAmount =0;
+haveHook = false;
+global.hookAmount = 0;

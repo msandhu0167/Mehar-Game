@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sFlag",
+    "path": "sprites/sFlag/sFlag.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

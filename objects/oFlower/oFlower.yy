@@ -5,7 +5,10 @@
   },
   "solid": true,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sFlower",
+    "path": "sprites/sFlower/sFlower.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

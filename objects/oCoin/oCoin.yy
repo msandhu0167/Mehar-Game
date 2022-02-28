@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sCoin",
+    "path": "sprites/sCoin/sCoin.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

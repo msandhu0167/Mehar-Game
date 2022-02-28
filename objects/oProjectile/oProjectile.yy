@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sProjectile",
+    "path": "sprites/sProjectile/sProjectile.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
