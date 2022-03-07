@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-room_goto_next();
-oHUD.levelTimer = 40;
+// Inherit the parent event
+event_inherited();
+

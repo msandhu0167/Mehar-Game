@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-room_goto_next();
-oHUD.levelTimer = 40;
+levelTimer -= 1/room_speed;
+
+if (levelTimer < 0)
+{
+	room_restart();	
+}

@@ -1,5 +1,5 @@
 //code that runs every frame
-if haveHook
+
 {
 	if (mouse_check_button_pressed(mb_left))
 	{
@@ -37,36 +37,6 @@ if isInvincible
 }
 
 
-levelTimer -= 1/room_speed;
-
-if (levelTimer < 0)
-{
-	room_restart();	
-}
-//keyboard check and inputs
-right = keyboard_check(vk_right);
-left = keyboard_check(vk_left);
-jump = keyboard_check_pressed(vk_up);
-
-//horizontal movement
-xDirection = right - left;
-xVector = xSpeed * xDirection;
-
-//check to see if there is a wall, and if there is, stop movement, if there isn't co
-
-if (place_meeting(x+ xVector, y,oWall)) 
-	{
-	//check on pixel to the left or right of us until we collide with oWall
-	// ! means "not"
-	while(!place_meeting(x + xVector, y,oWall))
-		{
-		//only move 1 pixel at a time ntil you hit a oWall
-		x = x + xDirection;
-		}
-		xVector = 0;
-	}	
-//otherwise move normal
-x = x + xVector;
 
 //verticle movement
 yVector = yVector + grv;
@@ -85,19 +55,6 @@ if (place_meeting(x, y + yVector, oWall))
 		yVector = 0;
 	}
 	
-	if (place_meeting(x, y + yVector, oTurret))
-	{
-	//check on pixel to the up or down of us until we collide with oWall
-	// ! means "not"
-	//"sign" is going to return the positive or negative sign for a value (-1, +1)
-	//sign(yVector) if yVector is positive it will return a positive1, and if our yVector is negative, it will retrn a -1 
-	while(!place_meeting(x, y + sign(yVector), oTurret))
-		{
-		//only move 1 pixel at a time ntil you hit a oWall
-		y = y + sign(yVector);
-		}
-		yVector = 0;
-	}
 	if (place_meeting(x, y + yVector, oTurret))
 	{
 	//check on pixel to the up or down of us until we collide with oWall

@@ -13,11 +13,8 @@ yVector = 0;
 //gravity levels
 grv = 0.4;
 
-jumpForce = -10;
+jumpForce = -15;
 
-//coins and points
-
-global.coins = 0;
 
 
 //invincibility
@@ -40,3 +37,6 @@ hookActive = false;
 hookAmount =0;
 haveHook = false;
 global.hookAmount = 0;
+
+enterBoat = false;
+enteredBoat = false;
