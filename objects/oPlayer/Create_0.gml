@@ -13,7 +13,7 @@ yVector = 0;
 //gravity levels
 grv = 0.4;
 
-jumpForce = -15;
+jumpForce = -10;
 
 
 
@@ -40,3 +40,10 @@ global.hookAmount = 0;
 
 enterBoat = false;
 enteredBoat = false;
+
+enum states
+{
+	walking,
+	jumping
+}
+state = states.walking;
