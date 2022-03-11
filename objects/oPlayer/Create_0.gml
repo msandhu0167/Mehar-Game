@@ -1,6 +1,6 @@
 //code that runs when player is created
 //how many pixels per frame we want the player to move
-xSpeed = 4;
+xSpeed = 0;
 
 //what direction the player is facing ( where 1 = right, -1 = left, 0 0 front/not moving)
 xDirection = 0;
