@@ -1,6 +1,8 @@
 //code that runs when player is created
+canJump = true;
+
 //how many pixels per frame we want the player to move
-xSpeed = 0;
+xSpeed = 4;
 
 //what direction the player is facing ( where 1 = right, -1 = left, 0 0 front/not moving)
 xDirection = 0;
@@ -44,6 +46,17 @@ enteredBoat = false;
 enum states
 {
 	walking,
-	jumping
+	jumping,
+	idle
+	
 }
-state = states.walking;
+state = states.idle;
+
+state_array[states.walking] = StatePlayerWalking;
+state_array[states.jumping] = StatePlayerJumping;
+state_array[states.idle] = StatePlayerIdle;
+
+sprite_array[states.walking] = sPlayerWalking;
+sprite_array[states.jumping] = sPlayerJumping;
+sprite_array[states.idle] = sPlayerIdle;
+

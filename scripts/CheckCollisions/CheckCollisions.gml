@@ -6,6 +6,10 @@ function CheckCollisionsX()
 	CheckInputs();
 	//horizontal movement
 	xDirection = right - left;
+	if (xDirection != 0)
+	{
+		image_xscale = xDirection;	
+	}
 	xVector = xSpeed * xDirection;
 	if (place_meeting(x + xVector, y, oWall))
 	{
@@ -31,7 +35,7 @@ function CheckCollisionsX()
 				xVector = 0;
 		}
 	//otherwise move normal 
-	x = x + xDirection
+	x = x + xVector
 }
 
 		

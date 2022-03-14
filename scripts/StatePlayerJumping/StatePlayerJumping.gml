@@ -3,7 +3,14 @@
 function StatePlayerJumping()
 {
 		//what does the state do?
+		CheckCollisionsX()
 	
+	
+	if (canJump)
+	{
+		yVector = jumpForce;
+		canJump = false;
+	}
 		//if we are touching oWall and we press the jump key, fly like an eagle 
 	if (place_meeting(x, y + 1, oWall) and (jump))
 	{
@@ -15,15 +22,22 @@ function StatePlayerJumping()
 			yVector = jumpForce;
 	}
 
-	
-	//animations for the state
+	CheckCollisionsY();
+
+
 	
 	//conditions for leaving the state
 	if(place_meeting(x, y + 1, oWall))
 	{
 		state = states.walking
+		canJump = true;
 	}
-
+	
+	if(place_meeting(x, y + 1, oTurret))
+	{
+		state = states.walking;
+		canJump = true;
+	}
 
 
 }

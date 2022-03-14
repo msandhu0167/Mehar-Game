@@ -1,15 +1,16 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function StatePlayerWalking()
+function StatePlayerIdle()
 {
-	
-	//what does the state do?
-	CheckCollisionsX();
+	//what the state does
+	CheckInputs();
 	CheckCollisionsY();
-	
-	//animations for the state
-	
-	//conditions for leaving the state
+
+	//how to exit the state
+	if (xDirection != 0)
+	{
+		state = states.walking;	
+	}
 	if (place_meeting(x, y + 1, oWall) and (jump))
 	{
 		state = states.jumping;
@@ -18,8 +19,5 @@ function StatePlayerWalking()
 	{
 		state = states.jumping;
 	}
-	if (xDirection != 0)
-	{
-		state = states.idle;	
-	}
+
 }
