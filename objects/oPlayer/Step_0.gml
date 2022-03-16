@@ -1,6 +1,6 @@
 //code that runs every frame
 script_execute(state_array[state]);
-sprite_index = sprite_array[state];
+sprite_index = (sprite_array[state]);
 
 
 		//if we are touching oWall and we press the jump key, fly like an eagle 
