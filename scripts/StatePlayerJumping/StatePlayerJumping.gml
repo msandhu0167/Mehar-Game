@@ -29,7 +29,7 @@ function StatePlayerJumping()
 	//conditions for leaving the state
 	if(place_meeting(x, y + 1, oWall))
 	{
-		state = states.walking
+		state = states.idle
 		canJump = true;
 	}
 	

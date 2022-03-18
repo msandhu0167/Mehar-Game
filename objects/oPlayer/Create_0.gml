@@ -50,6 +50,7 @@ enum states
 	idle
 	
 }
+
 state = states.idle;
 
 state_array[states.walking] = StatePlayerWalking;

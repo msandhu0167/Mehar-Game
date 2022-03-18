@@ -63,13 +63,13 @@ function CheckCollisionsY()
 				}
 				yVector = 0;
 		}	
-	if (place_meeting(x, y + xVector, oTurret))
+	if (place_meeting(x, y + yVector, oTurret))
 		{
 			//check on pixel to the up or down of us until we collide with oWall
 			// ! means "not"
 			//"sign" is going to return the positive or negative sign for a value (-1, +1)
 			//sign(yVector) if yVector is positive it will return a positive1, and if our yVector is negative, it will retrn a -1 
-			while(!place_meeting(x, y + sign(xVector), oTurret))
+			while(!place_meeting(x, y + sign(yVector), oTurret))
 				{
 				//only move 1 pixel at a time ntil you hit a oWall
 				y = y + sign(yVector);
