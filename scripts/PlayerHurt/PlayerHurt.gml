@@ -5,11 +5,11 @@ function PlayerHurt()
 	if(!oPlayer.isInvincible)
 	{
 		oPlayer.isInvincible = true;
-		global.hp --;
+		oPlayer.hp --;
 		if (oPlayer.hp < 1)
-		{
-			PlayerDeath();	
-		}
+			{
+				PlayerDeath();	
+			}
 	}
 }
 

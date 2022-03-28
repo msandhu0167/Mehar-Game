@@ -2,7 +2,7 @@
 canJump = true;
 
 //how many pixels per frame we want the player to move
-xSpeed = 5;
+xSpeed = 3;
 
 //what direction the player is facing ( where 1 = right, -1 = left, 0 0 front/not moving)
 xDirection = 0;
@@ -13,9 +13,9 @@ xVector = xSpeed * xDirection;
 yVector = 0;
 
 //gravity levels
-grv = 0.4;
+grv = 0.5;
 
-jumpForce = -11;
+jumpForce = -12;
 
 
 
