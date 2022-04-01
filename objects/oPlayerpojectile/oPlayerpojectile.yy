@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "sFlower",
-    "path": "sprites/sFlower/sFlower.yy",
+    "name": "sPlayerProjectile",
+    "path": "sprites/sPlayerProjectile/sPlayerProjectile.yy",
   },
   "solid": true,
   "visible": true,
   "spriteMaskId": {
-    "name": "sFlower",
-    "path": "sprites/sFlower/sFlower.yy",
+    "name": "sPlayerProjectile",
+    "path": "sprites/sPlayerProjectile/sPlayerProjectile.yy",
   },
   "persistent": false,
   "parentObjectId": null,
@@ -36,7 +36,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oFlower",
+  "name": "oPlayerpojectile",
   "tags": [],
   "resourceType": "GMObject",
 }
