@@ -9,9 +9,8 @@ else if (state == states.jumping)
 	{
 		StatePlayerJumping();
 	}
-		
-		
-		
+	
+
 		//if we are touching oWall and we press the jump key, fly like an eagle 
 	if (place_meeting(x, y + 1, oWall) and (jump))
 	{

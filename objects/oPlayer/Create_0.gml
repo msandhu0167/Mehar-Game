@@ -30,6 +30,8 @@ levelTimer = 40;
 //invincibility timer
 invTimer = 2;
 
+omniDirection = 0;
+
 mouseX = mouse_x;
 mouseY = mouse_y;
 hookActive = false;

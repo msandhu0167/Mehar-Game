@@ -5,10 +5,10 @@
 isInvincible = false;
 
 //health points
-hp = 2;
+hp = 1;
 
 //set timer
-invTimer = 2;
+invTimer = 1;
 
 //gravity
 grv = 0.4;
