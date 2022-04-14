@@ -49,6 +49,11 @@ else if (state == states.jumping)
 		}
 
 }
+
+if (levelTimer < 1)
+{
+	room_restart();
+}
 if isInvincible
 {
 	invTimer -= 1/room_speed;
@@ -69,4 +74,28 @@ if(y>=room_height)
 if (place_meeting(x, y + 1, oEnemy) and (jump))
 {
 		yVector = jumpForce;
+}
+
+//interaction
+var instance = collision_circle(x + interaction_offset_x, y + interaction_offset_y, interaction_radius, oInteractable, false, true);
+
+if(instance != noone) 
+{
+	switch(instance.type) 
+	{
+		case ITEMTYPES.key:
+			key_count += 1;
+			instance_destroy(instance);
+		break;
+		case ITEMTYPES.door:
+			instance_destroy(instance);
+		break;	
+		case ITEMTYPES.locked_door:
+				if(key_count > 0) {
+					key_count -=1;
+					instance_destroy(instance);
+			}
+		break;
+	
+	}
 }

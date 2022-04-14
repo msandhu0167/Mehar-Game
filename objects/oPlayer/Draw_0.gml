@@ -6,3 +6,12 @@ if (hookActive)
 {
 	draw_line(x, y, mouseX, mouseY);
 }
+
+if(debug)
+{
+	draw_set_color(c_black);
+	draw_circle(x + interaction_offset_x, y + interaction_offset_y, interaction_radius, true);
+	
+}
+
+draw_set_color(c_white);

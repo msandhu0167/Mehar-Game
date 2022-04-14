@@ -8,7 +8,7 @@ isInvincible = false;
 hp = 1;
 
 //set timer
-invTimer = 1;
+invTimer = 2;
 
 //gravity
 grv = 0.4;
