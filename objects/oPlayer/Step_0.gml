@@ -1,26 +1,20 @@
+
+
+if isInvincible
+{
+	invTimer -= 1/room_speed;
+	if invTimer <=0
+	{
+		invTimer = 2;
+		isInvincible = false;
+	}
+}
+
+
 //code that runs every frame
 script_execute(state_array[state]);
 sprite_index = sprite_array[state];
-if (state == states.walking)
-	{
-		StatePlayerWalking();
-	}
-else if (state == states.jumping)
-	{
-		StatePlayerJumping();
-	}
-	
 
-		//if we are touching oWall and we press the jump key, fly like an eagle 
-	if (place_meeting(x, y + 1, oWall) and (jump))
-	{
-			yVector = jumpForce;
-	}
-
-	if (place_meeting(x, y + 1, oTurret) and (jump))
-	{
-			yVector = jumpForce;
-	}
 
 
 {
@@ -50,20 +44,6 @@ else if (state == states.jumping)
 
 }
 
-if (levelTimer < 1)
-{
-	room_restart();
-}
-if isInvincible
-{
-	invTimer -= 1/room_speed;
-	if invTimer <= 0
-	{
-		invTimer = 2;
-		isInvincible = false;
-	}
-}
-
 
 //die in a pit and restart level
 if(y>=room_height)
@@ -71,10 +51,7 @@ if(y>=room_height)
 	{
 		PlayerDeath();	
 	}
-if (place_meeting(x, y + 1, oEnemy) and (jump))
-{
-		yVector = jumpForce;
-}
+	
 
 //interaction
 var instance = collision_circle(x + interaction_offset_x, y + interaction_offset_y, interaction_radius, oInteractable, false, true);

@@ -21,6 +21,10 @@ function StatePlayerJumping()
 	{
 			yVector = jumpForce;
 	}
+	if (place_meeting(x, y + 1, oEnemy) and (jump))
+	{
+		yVector = jumpForce;
+	}
 
 	CheckCollisionsY();
 

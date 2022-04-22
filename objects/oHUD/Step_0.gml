@@ -3,7 +3,8 @@
 
 levelTimer -= 1/room_speed;
 
-if (levelTimer < 0)
+if (levelTimer <= 0)
 {
 	room_restart();	
+	levelTimer = 40;
 }
