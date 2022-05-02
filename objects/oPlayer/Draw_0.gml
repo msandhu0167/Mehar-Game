@@ -9,7 +9,7 @@ if (hookActive)
 
 if(debug)
 {
-	draw_set_color(c_lime);
+	draw_set_color(c_green);
 	draw_circle(x + interaction_offset_x, y + interaction_offset_y, interaction_radius, true);
 	
 }

@@ -5,8 +5,11 @@
   },
   "solid": true,
   "visible": true,
-  "spriteMaskId": null,
-  "persistent": false,
+  "spriteMaskId": {
+    "name": "sDoor",
+    "path": "sprites/sDoor/sDoor.yy",
+  },
+  "persistent": true,
   "parentObjectId": {
     "name": "oInteractable",
     "path": "objects/oInteractable/oInteractable.yy",

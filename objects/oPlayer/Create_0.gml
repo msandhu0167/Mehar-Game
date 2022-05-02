@@ -59,9 +59,9 @@ sprite_array[states.walking] = sPlayerWalking;
 sprite_array[states.jumping] = sPlayerJumping;
 sprite_array[states.idle] = sPlayerIdle;
 
-debug = true;
+debug = false;
 key_count = 0;
 
-interaction_offset_x = 4;
-interaction_offset_y = -8;
-interaction_radius = 3;
+interaction_offset_x = 0;
+interaction_offset_y = -16;
+interaction_radius = 25;
