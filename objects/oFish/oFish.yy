@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sHook",
-    "path": "sprites/sHook/sHook.yy",
+    "name": "sFish",
+    "path": "sprites/sFish/sFish.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "sHook",
-    "path": "sprites/sHook/sHook.yy",
+    "name": "sFish",
+    "path": "sprites/sFish/sFish.yy",
   },
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -31,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oHook",
+  "name": "oFish",
   "tags": [],
   "resourceType": "GMObject",
 }
